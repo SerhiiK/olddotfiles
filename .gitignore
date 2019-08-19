@@ -72,6 +72,16 @@ nb-configuration.xml
 ##########################
 ## Terraform
 ##########################
-*.tfvars
+# Local directories
+**/.terraform/*
 
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Ignore any .tfvars files because it have acces key for AWS
+*.tfvars
 
